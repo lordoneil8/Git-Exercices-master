@@ -1,11 +1,9 @@
-You just wrote a cpp program that reads it config from a file named conf.ini.
-As you don't want to bother adding all files manualy, you have decided to use .gitignore.
+You just realized that you have commited a backup file: main.cpp~.
 
-You need to create a .gitignore file that will:
- - Ignore all files that end with a ~ (bakup files)
- - Ignore every files in the out directory but conf.ini
+Backup files should not be commited, let's correct that mistake.
 
-In other words, once the .gitignore file written, the command `git add .` should only stage:
- - .gitignore
- - main.cpp
- - out/conf.ini
+- Delete the file with `rm`
+- Add all changes, including deleted files with `git add -A`
+- Write a gitignore that will correct your mistake
+- Add it
+- Commit

@@ -5,11 +5,8 @@ source ../_generic_create.sh
 function _ex() {
     touch main.cpp
     touch main.cpp~
-
-    mkdir -p out
-    touch out/main.o
-    touch out/a.out
-    touch out/conf.ini
+    git add .
+    git commit -m "first commit"
 }
 
 _create _ex
